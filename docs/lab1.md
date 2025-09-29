@@ -8,31 +8,31 @@
 
 Список файлов в каталоге модулей ядра:
 
-![](images/image9.png)
+![Список файлов в каталоге модулей ядра:](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image9.png)
 
 Все загруженные модули ядра:
 
-![](images/image10.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image10.png)
 
 Создала файл правилами:
 
-![](images/image5.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image5.png)
 
 В файле прописала правила:
 
-![](images/image17.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image17.png)
 
 Применила правила:
 
-![](images/image15.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image15.png)
 
 Посмотрела основное расположение конфигурационных файлов:
 
-![](images/image3.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image3.png)
 
 Вывела параметр CONFIG_XFS_FS:
 
-![](images/image14.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image14.png)
 
 Описание: 
 - У параметра CONFIG_XFS_FS значение m (module)
@@ -45,7 +45,7 @@
 ### Задание 2. Наблюдение за VFS
 
 Использовала strace для анализа команды cat  /etc/os-release > /dev/null:
-![](images/img.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img.png)
 
 Когда пишем > /dev/null, шелл до запуска cat открывает /dev/null поэтому когда трассируем только cat и не видим открытие /dev/null
 сам cat открывает файл и читает содержимое кусками. Дальше показывает, что прочитал 386 байт, в stdout (fd=1), который уже «смотрит» на /dev/null:

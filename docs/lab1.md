@@ -58,29 +58,29 @@
 ### Задание 3. LVM Management 
 
 Добавила к своей виртуальной машине диск размером 2GB (добавляла вручную):
-![](images/image6.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image6.png)
 
 Создала раздел, используя parted, создала Physical Volume (PV) на этом разделе:
-![](images/image19.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image19.png)
 
 Создала два Logical Volume (LV):
-![](images/image1.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image1.png)
 
 Logical Volume:
 - data_lv на 1200 MiB
 - logs_lv на всё оставшееся
 
 Обновила индекс пакетов и поставила утилиты для XFS:
-![](images/image4.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image4.png)
 
 Подготовка logs_lv как XFS с меткой app_logs и готов к монтированию в /mnt/app_logs:
-![](images/image2.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image2.png)
 
 Отформатировала data_lv в ext4 и примонтировала в /mnt/app_data:
-![](images/image16.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image16.png)
 
 Проверила, что все смонтировано:
-![](images/image23.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image23.png)
 
 - vg_highload-data_lv → ext4, метка app_data, смонтирован в /mnt/app_data, ~1 ГиБ.
 - vg_highload-logs_lv → xfs, метка app_logs, смонтирован в /mnt/app_logs, ~733–780 МиБ.
@@ -89,25 +89,25 @@ Logical Volume:
 ### Задание 4. Использование pseudo filesystem
 
 Извлекла из /proc модель CPU:
-![](images/image12.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image12.png)
 
 Посмотрела объём памяти (KiB):
-![](images/image21.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image21.png)
 
 $$ - это специальный параметр шелла (не обычная переменная). Он всегда развертывается в PID процесса шелла, который выполняет текущую команду.
 
 Нашла PPid (родителя шелла) через /proc/$$/status:
-![](images/image8.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image8.png)
 
 
 - Pid: 7718 — это PID текущего шелла (bash). Значение переменной $$.
 - PPid: 7709 — PID родительского процесса шелла
 
 Посмотрела как называется основной диск и посмотрела I/O-scheduler именно для этого диска:
-![](images/image13.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image13.png)
 
 Определила свой основной интерфейс:
-![](images/image11.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image11.png)
 
 Посмотрела размер MTU для основного сетевого интерфейса:
-![](images/image24.png)
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image24.png)

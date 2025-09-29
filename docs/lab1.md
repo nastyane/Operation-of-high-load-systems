@@ -3,27 +3,35 @@
 ### Задание 1. Kernel and Module Inspection
 
 Версия ядра ОС:
-![](images/image18.png)
+
+![Версия ядра ОС:](images/image18.png)
 
 Список файлов в каталоге модулей ядра:
+
 ![](images/image9.png)
 
 Все загруженные модули ядра:
+
 ![](images/image10.png)
 
 Создала файл правилами:
+
 ![](images/image5.png)
 
 В файле прописала правила:
+
 ![](images/image17.png)
 
 Применила правила:
+
 ![](images/image15.png)
 
 Посмотрела основное расположение конфигурационных файлов:
+
 ![](images/image3.png)
 
 Вывела параметр CONFIG_XFS_FS:
+
 ![](images/image14.png)
 
 Описание: 

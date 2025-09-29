@@ -4,7 +4,7 @@
 
 Версия ядра ОС:
 
-![Версия ядра ОС:](images/image18.png)
+![Версия ядра ОС:](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image18.png)
 
 Список файлов в каталоге модулей ядра:
 

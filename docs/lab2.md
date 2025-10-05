@@ -77,20 +77,25 @@ EOF
 ```
 
 Компиляция 2 файлов:
+
 ![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img11.png)
 
-Запустила файл для создания и написания в 1 терминале: 
+Запустила файл для создания и написания в 1 терминале:
+
 ![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img12.png)
 
 Запустила файл для читателя во 2 терминале: 
+
 ![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img13.png)
 
 Потом я поняла, что ipcs -m не работает потому что я создала по POSIX IPC и немного переделала. 
 
 Создание шарерной памяти: 
+
 ![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img14.png)
 
 Выполнение ipcs -m:
+
 ![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img16.png)
 
 Выполнив команду ipcs -m можно увидеть ключ, id сегмента, владельца, права, размер сегмента, сколько процессов сейчас прикреплены. У меня 0 тк никаких процессов я не прикрепляла. 
@@ -105,7 +110,7 @@ EOF
 
 ![PID](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img8.png)
 
-Вывела данные о использовании RSS и VSZ
+Вывела данные о использовании RSS и VSZ:
 
 ![RSS и VSZ](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img9.png)
 

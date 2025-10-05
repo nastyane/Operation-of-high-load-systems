@@ -6,16 +6,16 @@
 ![Скачала пакеты:](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img1.png)
 
 Создала bash-скрипт:
-![Создала bash-скрипт:](images/img7.png)
+![Создала bash-скрипт:](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img7.png)
 
 Создала systemd unit файл для скрипта, который переживает любые обновления системы:
-![systemd unit файл для скрипта](images/img6.png)
+![systemd unit файл для скрипта](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img6.png)
 
 Проверила, что сервис работает:
-![Проверила, что сервис работает:](images/img5.png)
+![Проверила, что сервис работает:](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img5.png)
 
 Используя systemd-analyze посмотрела systemd unit`ов стартующих дольше всего:
-![топ-5 systemd unit](images/img3.png)
+![топ-5 systemd unit](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img3.png)
 
 ### Задание 2. Межпроцессное взаимодействие (IPC) с разделяемой памятью 
 
@@ -77,34 +77,34 @@ EOF
 ```
 
 Компиляция 2 файлов:
-![компиляция](images/img11.png)
+![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img11.png)
 
 Запустила файл для создания и написания в 1 терминале: 
-![компиляция](images/img12.png)
+![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img12.png)
 
 Запустила файл для читателя во 2 терминале: 
-![компиляция](images/img13.png)
+![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img13.png)
 
 Потом я поняла, что ipcs -m не работает потому что я создала по POSIX IPC и немного переделала. 
 
 Создание шарерной памяти: 
-![компиляция](images/img14.png)
+![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img14.png)
 
 Выполнение ipcs -m:
-![компиляция](images/img16.png)
+![компиляция](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img16.png)
 
 Выполнив команду ipcs -m можно увидеть ключ, id сегмента, владельца, права, размер сегмента, сколько процессов сейчас прикреплены. У меня 0 тк никаких процессов я не прикрепляла. 
 
 ### Задание 3. Анализ памяти процессов (VSZ vs RSS) 
 
 Открыла 1 окно терминала и запустила питон скрипт, который запрашивает 250 MiB памяти и держит ее 2 минуты:
-![питон скрипт](images/img2.png)
+![питон скрипт](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img2.png)
 
 Открыла 2 окно терминала, узнала PID запущенного скрипта:
-![PID](images/img8.png)
+![PID](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img8.png)
 
 Вывела данные о использовании RSS и VSZ
-![RSS и VSZ](images/img9.png)
+![RSS и VSZ](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img9.png)
 
 #### Почему vsz больше rss
 
@@ -117,8 +117,8 @@ VSZ больше RSS потому что VSZ - это всё адресное п
 ### Задание 4. NUMA и cgroups 
 
 Количество NUMA нод на сервере:
-![Количество NUMA нод](images/img4.png)
+![Количество NUMA нод](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img4.png)
 
 Количество памяти для каждой NUMA ноды:
-![Количество памяти](images/img17.png)
+![Количество памяти](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img17.png)
 

@@ -3,7 +3,7 @@
 ### Задание 1. Systemd
 Скачала пакеты:
 
-![Скачала пакеты:](images/img1.png)
+![Скачала пакеты:]([images/img1.png](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img1.png))
 
 Создала bash-скрипт:
 ![Создала bash-скрипт:](images/img7.png)

@@ -98,12 +98,15 @@ EOF
 ### Задание 3. Анализ памяти процессов (VSZ vs RSS) 
 
 Открыла 1 окно терминала и запустила питон скрипт, который запрашивает 250 MiB памяти и держит ее 2 минуты:
+
 ![питон скрипт](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img2.png)
 
 Открыла 2 окно терминала, узнала PID запущенного скрипта:
+
 ![PID](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img8.png)
 
 Вывела данные о использовании RSS и VSZ
+
 ![RSS и VSZ](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img9.png)
 
 #### Почему vsz больше rss
@@ -117,8 +120,10 @@ VSZ больше RSS потому что VSZ - это всё адресное п
 ### Задание 4. NUMA и cgroups 
 
 Количество NUMA нод на сервере:
+
 ![Количество NUMA нод](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img4.png)
 
 Количество памяти для каждой NUMA ноды:
+
 ![Количество памяти](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img17.png)
 

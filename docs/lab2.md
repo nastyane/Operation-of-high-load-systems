@@ -6,15 +6,19 @@
 ![Скачала пакеты:](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img1.png)
 
 Создала bash-скрипт:
+
 ![Создала bash-скрипт:](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img7.png)
 
 Создала systemd unit файл для скрипта, который переживает любые обновления системы:
+
 ![systemd unit файл для скрипта](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img6.png)
 
 Проверила, что сервис работает:
+
 ![Проверила, что сервис работает:](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img5.png)
 
 Используя systemd-analyze посмотрела systemd unit`ов стартующих дольше всего:
+
 ![топ-5 systemd unit](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img3.png)
 
 ### Задание 2. Межпроцессное взаимодействие (IPC) с разделяемой памятью 

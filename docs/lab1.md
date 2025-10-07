@@ -14,6 +14,10 @@
 
 ![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image10.png)
 
+Модули ядра через команду lsmod:
+
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img22.png)
+
 Создала файл правилами:
 
 ![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image5.png)
@@ -25,6 +29,11 @@
 Применила правила:
 
 ![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/image15.png)
+
+Сделала отключение cdrom через blacklist:
+
+![](https://github.com/nastyane/Operation-of-high-load-systems/blob/master/images/img21.png)
+
 
 Посмотрела основное расположение конфигурационных файлов:
 
